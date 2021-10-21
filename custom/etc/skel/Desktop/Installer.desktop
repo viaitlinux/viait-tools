@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Install Viait Linux
+GenericName=Install System
+Keywords=calamares;system;installer;
+TryExec=calamares
+Exec=sh -c "pkexec calamares"
+Comment=Install Viait Linux
+Icon=calamares
+Terminal=false
+StartupNotify=true
+Categories=System
+X-AppStream-Ignore=true
