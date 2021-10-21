@@ -45,11 +45,11 @@ copyViaitFiles () {
     cp ./custom/packages.x86_64 ./viaitrel/
     cp ./custom/pacman.conf ./viaitrel/
     cp ./custom/profiledef.sh ./viaitrel/
-    cp -r ./custom/efiboot ./viaitrel/
-    cp -r ./custom/syslinux ./viaitrel/
-    cp -r ./custom/usr ./viaitrel/airootfs
-    cp -r ./custom/etc ./viaitrel/airootfs
-    cp -r ./custom/opt ./viaitrel/airootfs
+    cp -rf ./custom/efiboot ./viaitrel/
+    cp -rf ./custom/syslinux ./viaitrel/
+    cp -rf ./custom/usr ./viaitrel/airootfs
+    cp -rf ./custom/etc ./viaitrel/airootfs
+    cp -rf ./custom/opt ./viaitrel/airootfs
 }
 
 setHostname () {
@@ -58,7 +58,7 @@ setHostname () {
 
 createPasswdFile () {
     echo "root:x:0:0:root:/root:/usr/bin/bash 
-    "${USERNAME}":x:1010:1010::/home/"${USERNAME}":/bin/bash" > ./viaitrel/airootfs/etc/passwd
+    "${USERNAME}":x:1010:1010::/home/"${USERNAME}":/bin/zsh" > ./viaitrel/airootfs/etc/passwd
 }
 
 # Create group file
@@ -83,7 +83,7 @@ createGroups () {
 }
 
 crtshadow () {
-    usr_hash=$(openssl passwd -6 "${PASSWORD}")
+    usr_hash=$(openssl passwd -6 "${PASS}")
     root_hash=$(openssl passwd -6 "${PASSROOT}")
     echo "root:"${root_hash}":14871::::::
     "${USERNAME}":"${usr_hash}":14871::::::" > ./viaitrel/airootfs/etc/shadow
@@ -115,11 +115,9 @@ echo "LANG="${LOC}".UTF-8" > ./viaitrel/airootfs/etc/locale.conf
 
 buildisofile () {
     mkarchiso -vv -w ./viait-work -o ./viait-ouput ./viaitrel
-}
-
-restoreOwnership () {
     sudo chown -R ${USER} ./
 }
+
 
 copyBaseProfile
 createSymLinks
@@ -136,4 +134,3 @@ setkeylayout
 crtkeyboard
 crtlocalec
 buildisofile
-restoreOwnership

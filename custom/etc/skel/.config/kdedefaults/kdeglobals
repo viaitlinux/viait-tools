@@ -1,8 +1,8 @@
  [General]
-ColorScheme=Breeze-Dark
+ColorScheme=BreezeDark
 
 [Icons]
 Theme=Tela
 
 [KDE]
-widgetStyle=Breeze
+widgetStyle=BreezeDark
