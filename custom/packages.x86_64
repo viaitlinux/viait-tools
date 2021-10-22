@@ -140,7 +140,7 @@ hwinfo
 libburn
 libisofs
 libisoburn
-linux-headers
+linux-zen-headers
 logrotate
 lsb-release
 os-prober
@@ -152,7 +152,6 @@ perl
 pkgfile
 plocate
 tlp
-trizen
 udftools
 unace
 unrar
@@ -299,7 +298,8 @@ gocryptfs
 gwenview
 k3b
 kinit
-konsole
+#konsole
+alacritty
 networkmanager-qt
 okular
 packagekit-qt5
@@ -310,7 +310,6 @@ kate
 
 # Display Manager
 sddm
-sddm-kcm
 
 # Calamares dependencies
 boost
@@ -358,5 +357,7 @@ ttf-fantasque-sans-mono
 ttf-fira-sans
 sweet-gtk-theme-mars
 sweet-kde-theme-mars
+sweet-kde-git
+yay
 
 

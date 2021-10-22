@@ -114,7 +114,7 @@ echo "LANG="${LOC}".UTF-8" > ./viaitrel/airootfs/etc/locale.conf
 }
 
 buildisofile () {
-    mkarchiso -vv -w ./viait-work -o ./viait-ouput ./viaitrel
+    mkarchiso -vv -w ./viait-work -o ./viait-output ./viaitrel
     sudo chown -R ${USER} ./
 }
 
