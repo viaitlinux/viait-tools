@@ -121,8 +121,7 @@ buildisofile () {
 
 copyBaseProfile
 createSymLinks
-cleanLocalRepo
-./scripts/viaitrepo.sh
+copyLocalRepo
 removeCloudInit
 copyViaitFiles
 setHostname

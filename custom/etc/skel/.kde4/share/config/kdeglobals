@@ -133,10 +133,10 @@ ForegroundPositive=1,162,153
 ForegroundVisited=0,188,212
 
 [General]
-ColorScheme=BreezeDark
-Name=Breeze Dark
+ColorScheme=Sweet-mars
+Name=Sweet Mars
 shadeSortColumn=true
-widgetStyle=Breeze
+widgetStyle=Sweet-mars
 
 [Icons]
 Theme=Tela

@@ -354,9 +354,9 @@ mkinitcpio-openswap
 vala
 libgee
 tela-icon-theme
-#whitesur-kde-theme-git
-whitesur-gtk-theme
 ttf-fantasque-sans-mono
 ttf-fira-sans
+sweet-gtk-theme-mars
+sweet-kde-theme-mars
 
 
