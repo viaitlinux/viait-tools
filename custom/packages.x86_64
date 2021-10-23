@@ -1,3 +1,4 @@
+#
 # SPDX-License-Identifier: GPL-3.0-or-later
 alsa-utils
 amd-ucode
@@ -47,6 +48,7 @@ lftp
 libfido2
 libusb-compat
 linux-zen
+linux-atm
 linux-firmware
 livecd-sounds
 lsscsi
@@ -140,7 +142,7 @@ hwinfo
 libburn
 libisofs
 libisoburn
-linux-zen-headers
+linux-headers
 logrotate
 lsb-release
 os-prober
@@ -152,6 +154,7 @@ perl
 pkgfile
 plocate
 tlp
+trizen
 udftools
 unace
 unrar
@@ -204,7 +207,7 @@ poppler-glib
 # pipewire-pulse
 # alsa-card-profiles
 # gst-plugin-pipewire
-# Pulseaudio - comment pipewire packages if using pulseaudio
+# Pulseaudio - comment pipewire if using pulseaudio
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
@@ -255,6 +258,7 @@ aisleriot
 geany
 meld
 neofetch
+papirus-icon-theme
 
 # Fonts
 ttf-dejavu
@@ -271,42 +275,40 @@ ttf-opensans
 freetype2
 
 # Printing Support
-#cups
-#cups-pdf
-#cups-filters
-#cups-pk-helper
-#foomatic-db
-#foomatic-db-engine
-#ghostscript
-#gsfonts
-#gutenprint
-#python-pillow
-#python-pip
-#python-pyqt5
-#python-reportlab
-#simple-scan
-#system-config-printer
+cups
+cups-pdf
+cups-filters
+cups-pk-helper
+foomatic-db
+foomatic-db-engine
+ghostscript
+gsfonts
+gutenprint
+python-pillow
+python-pip
+python-pyqt5
+python-reportlab
+simple-scan
+system-config-printer
 
-# KDE
-ark
+# Gnome
+adapta-gtk-theme
+adwaita-icon-theme
+brasero
 breeze-icons
-cryfs
-discover
-dolphin
-encfs
-gocryptfs
-gwenview
-k3b
-kinit
-#konsole
-alacritty
-networkmanager-qt
-okular
-packagekit-qt5
-pavucontrol-qt
-plasma
-sweeper
-kate
+dconf-editor
+gnome
+gnome-nettool
+gnome-packagekit
+gnome-software-packagekit-plugin
+gnome-sound-recorder
+gnome-todo
+gnome-tweaks
+gnome-usage
+pavucontrol
+polkit-gnome
+tmux
+transmission-gtk
 
 # Display Manager
 sddm
@@ -348,16 +350,4 @@ yaml-cpp
 calamares
 ckbcomp
 mkinitcpio-openswap
-
-##Viait Packages
-vala
-libgee
-tela-icon-theme
-ttf-fantasque-sans-mono
-ttf-fira-sans
-sweet-gtk-theme-mars
-sweet-kde-theme-mars
-sweet-kde-git
-yay
-
 

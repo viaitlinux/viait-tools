@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=ViaitGNOME
+Comment=Form of Otis for Viait Linux
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=ViaitGNOME
+MetacityTheme=ViaitGNOME
+IconTheme=Zafiro-icons
+ButtonLayout=:minimize,maximize,close

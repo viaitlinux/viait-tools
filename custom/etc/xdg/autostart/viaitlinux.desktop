@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Exec=/usr/bin/viait-setup
+Name=Setup Viait Desktop
+Comment=Update Desktop Theme 合目前的語言區域設定
+Terminal=false
+OnlyShowIn=GNOME;LXDE;Unity;MATE;
+Type=Application
+StartupNotify=false
+X-KDE-autostart-after=panel

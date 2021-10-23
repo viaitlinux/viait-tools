@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=ViaitGnomeDesktop
+GenericName=Viait Desktop
+Comment=Setup Viait Gnome Desktop
+Exec=~/.viait/startup/viaitdesktop.sh
+Terminal=false
+Type=Application
+X-GNOME-Autostart-enabled=true
