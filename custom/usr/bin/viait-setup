@@ -1,7 +1,9 @@
 #!/bin/bash
 
+gnome-shell-extension-tool -e cosmic-dock@system76.com
+gnome-shell-extension-tool -e user-themes
 gsettings set org.gnome.desktop.interface gtk-theme ViaitGNOME
 gsettings set org.gnome.desktop.wm.preferences theme ViaitGNOME
 gsettings set org.gnome.shell.extensions.user-theme name ViaitGNOME
-gsettings set org.gnome.desktop.interface.cursor-theme name ViaitCursors
-gsettings set org.gnome.desktop.interface.icon-theme name ViaitIcons
+gsettings set org.gnome.desktop.interface cursor-theme ViaitCursors
+gsettings set org.gnome.desktop.interface icon-theme ViaitIcons

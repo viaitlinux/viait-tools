@@ -50,6 +50,8 @@ copyViaitFiles () {
     cp -rf ./custom/usr ./viaitrel/airootfs
     cp -rf ./custom/etc ./viaitrel/airootfs
     cp -rf ./custom/opt ./viaitrel/airootfs
+    chmod +x ./viaitrel/airootfs/usr/bin/viait-setup
+    chown viaitlive:users ./viaitrel/airootfs/usr/bin/viait-setup
 }
 
 setHostname () {
@@ -115,7 +117,7 @@ echo "LANG="${LOC}".UTF-8" > ./viaitrel/airootfs/etc/locale.conf
 
 buildisofile () {
     mkarchiso -vv -w ./viait-work -o ./viait-output ./viaitrel
-    sudo chown -R ${USER} ./
+    chown -R ${USER} ./
 }
 
 
