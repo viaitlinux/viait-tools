@@ -23,7 +23,6 @@ dosfstools
 e2fsprogs
 edk2-shell
 efibootmgr
-espeakup
 ethtool
 exfatprogs
 f2fs-tools
@@ -92,9 +91,6 @@ squashfs-tools
 sudo
 syslinux
 systemd-resolvconf
-tcpdump
-terminus-font
-testdisk
 tpm2-tss
 udftools
 usb_modeswitch
@@ -216,8 +212,6 @@ xterm
 # Networking
 avahi
 curl
-dnsutils
-ethtool
 filezilla
 firefox
 gnome-nettool
@@ -226,30 +220,18 @@ netctl
 networkmanager
 nm-connection-editor
 network-manager-applet
-net-tools
-nss-mdns
 openresolv
 r8168
 wget
-whois
 
 # Fonts
-ttf-dejavu
-ttf-liberation
-ttf-bitstream-vera
 ttf-ubuntu-font-family
-cantarell-fonts
-ttf-croscore
-ttf-carlito
-ttf-caladea
 noto-fonts
 opendesktop-fonts
-ttf-opensans
-freetype2
 
 # Gnome
 #adapta-gtk-theme
-adwaita-icon-theme
+#adwaita-icon-theme
 brasero
 dconf-editor
 gnome
