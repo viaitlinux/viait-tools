@@ -1,9 +1,18 @@
 #!/bin/bash
 
-gnome-shell-extension-tool -e cosmic-dock@system76.com
-gnome-shell-extension-tool -e user-themes
-gsettings set org.gnome.desktop.interface gtk-theme ViaitGNOME
-gsettings set org.gnome.desktop.wm.preferences theme ViaitGNOME
-gsettings set org.gnome.shell.extensions.user-theme name ViaitGNOME
-gsettings set org.gnome.desktop.interface cursor-theme ViaitCursors
-gsettings set org.gnome.desktop.interface icon-theme ViaitIcons
+FILE=~/.viait/settings/desktop.default
+
+if test -f "$FILE"; then
+    echo "Using Default Desktop Theme"
+    gnome-shell-extension-tool -e cosmic-dock@system76.com
+    gnome-shell-extension-tool -e user-themes
+    gsettings set org.gnome.desktop.interface gtk-theme ViaitGNOME
+    gsettings set org.gnome.desktop.wm.preferences theme ViaitGNOME
+    gsettings set org.gnome.shell.extensions.user-theme name ViaitGNOME
+    gsettings set org.gnome.desktop.interface cursor-theme ViaitCursors
+    gsettings set org.gnome.desktop.interface icon-theme ViaitIcons
+    # gsettings set org.gnome.shell favorite-apps ['org.gnome.Nautilus.desktop', 'firefox.desktop', 'org.gnome.Terminal.desktop', 'code-oss.desktop', 'filezilla.desktop']
+    rm ~/.viait/settings/desktop.default
+else 
+    echo "Using Custom Desktop Theme"
+fi

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Encoding=UTF-8
-Exec=/usr/local/bin/ezmaint
+Exec=/usr/local/bin/viait-setup
 Name=Setup Viait Desktop
 Comment=Update Desktop Theme
 Terminal=false
