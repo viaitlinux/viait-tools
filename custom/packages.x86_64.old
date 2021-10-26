@@ -1,4 +1,3 @@
- 
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 alsa-utils
@@ -10,6 +9,7 @@ bind-tools
 brltty
 broadcom-wl-dkms
 btrfs-progs
+clonezilla
 crda
 cryptsetup
 darkhttpd
@@ -23,6 +23,7 @@ dosfstools
 e2fsprogs
 edk2-shell
 efibootmgr
+espeakup
 ethtool
 exfatprogs
 f2fs-tools
@@ -41,15 +42,18 @@ irssi
 iw
 iwd
 jfsutils
+kitty-terminfo
 less
 lftp
 libfido2
 libusb-compat
 linux-zen
+linux-atm
 linux-firmware
 livecd-sounds
 lsscsi
 lvm2
+lynx
 man-db
 man-pages
 mc
@@ -70,11 +74,13 @@ ntfs-3g
 nvme-cli
 openconnect
 openssh
+openvpn
 partclone
 parted
 partimage
 pcsclite
 ppp
+pptpclient
 pv
 qemu-guest-agent
 reflector
@@ -91,11 +97,17 @@ squashfs-tools
 sudo
 syslinux
 systemd-resolvconf
+tcpdump
+terminus-font
+testdisk
+tmux
 tpm2-tss
 udftools
 usb_modeswitch
 usbmuxd
 usbutils
+vim
+virtualbox-guest-utils
 vpnc
 wireless-regdb
 wireless_tools
@@ -130,7 +142,7 @@ hwinfo
 libburn
 libisofs
 libisoburn
-linux-zen-headers
+linux-headers
 logrotate
 lsb-release
 os-prober
@@ -142,12 +154,22 @@ perl
 pkgfile
 plocate
 tlp
+trizen
 udftools
 unace
 unrar
 unzip
 xdg-user-dirs
 xz
+
+# Filesystem
+gvfs
+gvfs-afc
+gvfs-goa
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
 
 # Multimedia
 alsa-plugins
@@ -176,6 +198,16 @@ libopenraw
 mencoder
 mjpegtools
 poppler-glib
+# Pipewire - comment pulseaudio packages if using pipewire
+# pipewire
+# pipewire-alsa
+# pipewire-docs
+# pipewire-jack
+# pipewire-media-session
+# pipewire-pulse
+# alsa-card-profiles
+# gst-plugin-pipewire
+# Pulseaudio - comment pipewire if using pulseaudio
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
@@ -203,36 +235,80 @@ xterm
 # Networking
 avahi
 curl
+dnsutils
+ethtool
 filezilla
 firefox
 gnome-nettool
 modemmanager
 netctl
 networkmanager
+networkmanager-openvpn
 nm-connection-editor
 network-manager-applet
+net-tools
+nss-mdns
 openresolv
 r8168
 wget
+whois
+
+# Desktop
+aisleriot
+geany
+meld
+neofetch
+papirus-icon-theme
 
 # Fonts
+ttf-dejavu
+ttf-liberation
+ttf-bitstream-vera
 ttf-ubuntu-font-family
+cantarell-fonts
+ttf-croscore
+ttf-carlito
+ttf-caladea
 noto-fonts
 opendesktop-fonts
+ttf-opensans
+freetype2
+
+# Printing Support
+cups
+cups-pdf
+cups-filters
+cups-pk-helper
+foomatic-db
+foomatic-db-engine
+ghostscript
+gsfonts
+gutenprint
+python-pillow
+python-pip
+python-pyqt5
+python-reportlab
+simple-scan
+system-config-printer
 
 # Gnome
-#adapta-gtk-theme
-#adwaita-icon-theme
+adapta-gtk-theme
+adwaita-icon-theme
 brasero
+breeze-icons
 dconf-editor
 gnome
 gnome-nettool
 gnome-packagekit
 gnome-software-packagekit-plugin
+gnome-sound-recorder
+gnome-todo
 gnome-tweaks
 gnome-usage
 pavucontrol
 polkit-gnome
+tmux
+transmission-gtk
 
 # Display Manager
 sddm
@@ -274,9 +350,4 @@ yaml-cpp
 calamares
 ckbcomp
 mkinitcpio-openswap
-
-##Viait Packages
-neofetch
-yay
-code
 

@@ -50,8 +50,6 @@ copyViaitFiles () {
     cp -rf ./custom/usr ./viaitrel/airootfs
     cp -rf ./custom/etc ./viaitrel/airootfs
     cp -rf ./custom/opt ./viaitrel/airootfs
-    chmod +x ./viaitrel/airootfs/usr/bin/viait-setup
-    chown viaitlive:users ./viaitrel/airootfs/usr/bin/viait-setup
 }
 
 setHostname () {
